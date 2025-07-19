@@ -7,22 +7,7 @@ use std::io;
 use std::io::{BufRead, BufReader, ErrorKind, Write};
 
 fn main() {
-    let arra_1: [i32; 6] = [1,2,3,4,5,6];
-    // println!("2st: {}", arra_1[1]);
-    // print!("Length: {}", arra_1.len());
-    let mut loop_idx = 0;
-    loop {
-        if arra_1[loop_idx] % 2 == 0 {
-            loop_idx += 1;
-            continue;
-        }
-
-        if arra_1[loop_idx] == 6 {
-            break;
-        }
-        println!("Val: {}", arra_1[loop_idx]);
-        loop_idx += 1;
-    }
+    
 }
 
 /*
@@ -118,4 +103,81 @@ fn main() {
         Ordering::Equal => println!("You gained the right to vote")
         _ => println!("Not an Important Birthday"),
         };
+*/
+
+/*
+let arra_1: [i32; 6] = [1,2,3,4,5,6];
+// println!("2st: {}", arra_1[1]);
+// print!("Length: {}", arra_1.len());
+let mut loop_idx = 0;
+loop {
+    if arra_1[loop_idx] % 2 == 0 {
+        loop_idx += 1;
+        continue;
+    }
+
+    if arra_1[loop_idx] == 6 {
+        break;
+    }
+    println!("Val: {}", arra_1[loop_idx]);
+    loop_idx += 1;
+}
+*/
+
+/*
+while loop_idx < arr_2.len() {
+    println!("Arr: {}", arr_2[loop_idx]);
+    loop_idx += 1;
+}
+*/
+
+/*
+let arr_2: [i32; 9] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let mut loop_idx: i32 = 0;
+
+for val in arr_2.iter() {
+    println!("Val: {}", val);
+}
+*/
+
+/*
+let my_tuple: (u8, String, f64) = (47, "Derek".to_string(), 50_000.00);
+println!("Name: {}", my_tuple.1);
+let (v1, v2, v3) = my_tuple;
+println!("Age: {}", v1);
+*/
+
+/*
+let mut st1 = String::new();
+st1.push('A');
+st1.push_str(" word");
+
+for word in st1.split_whitespace() {
+    println!("{}", word);
+}
+let st2 = st1.replace("A", "Another");
+println!("{}", st2);
+*/
+
+/*
+let st3 = String::from("x r t b h k k a m c ");
+let mut v1: Vec<char> = st3.chars().collect();
+v1.sort();
+v1.dedup();
+for char in v1 {
+    println!("{}", char);
+}
+let st4: &str = "Random string";
+let mut st5: String = st4.to_string();
+println!("{}", st5);
+let byte_arr1: &[u8] = st5.as_bytes();
+let st6: &str = &st5[0..6];
+println!("String length: {}", st6.len());
+st5.clear();
+let st6 = String::from("Just some");
+let st7 = String::from(" words");
+let st8 = st6 + &st7;
+for char in st8.bytes() {
+    println!("{}", char);
+}
 */
